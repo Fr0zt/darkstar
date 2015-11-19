@@ -2391,7 +2391,7 @@ void CAICharNormal::ActionWeaponSkillStart()
             WeaponSkillStartError(MSGBASIC_UNABLE_TO_SEE_TARG);
             return;
         }
-        if (218 >= m_PWeaponSkill->getID() && m_PWeaponSkill->getID() >= 192) // ranged WS IDs
+        if (221 >= m_PWeaponSkill->getID() && m_PWeaponSkill->getID() >= 192) // ranged WS IDs
         {
             CItemWeapon* PItem = (CItemWeapon*)m_PChar->getEquip(SLOT_AMMO);
 
@@ -2658,7 +2658,7 @@ void CAICharNormal::ActionWeaponSkillFinish()
         wspoints = 1;
     }
 
-    if (m_PWeaponSkill->getID() >= 192 && m_PWeaponSkill->getID() <= 218)
+    if (m_PWeaponSkill->getID() >= 192 && m_PWeaponSkill->getID() <= 221)
     {
         //ranged WS IDs
         CItemWeapon* PAmmo = (CItemWeapon*)m_PChar->getEquip(SLOT_AMMO);
